@@ -33,28 +33,28 @@
                     <img src="images/Badrinath.webp" alt="Badrinath Temple">
                     <h2>1. Badrinath Temple (North)</h2>
                     <div class="location">Badrinath, Uttarakhand</div>
-                    <p class="description">Representing the north, Badrinath is situated in the Garhwal Himalayas, on the banks of the Alaknanda River...</p>
+                    <p class="description">Representing the north, Badrinath is situated in the Garhwal Himalayas, on the banks of the Alaknanda River. This sacred shrine is dedicated to Lord Vishnu, who is worshipped in his Badrinarayan form. The temple is one of the 108 Divya Desams (holy shrines for Vaishnavites) and is also part of the smaller Chota Char Dhaam circuit within Uttarakhand. The striking colourful facade against the backdrop of the Neelkanth peak is an unforgettable sight.</p>
                 </div>
 
                 <div class="temple-entry">
                     <img src="images/Ramanathaswamy.jpg" alt="Ramanathaswamy Temple">
                     <h2>2. Ramanathaswamy Temple (South)</h2>
                     <div class="location">Rameswaram, Tamil Nadu</div>
-                    <p class="description">Representing the south, this temple is located on Rameswaram island in Tamil Nadu. It is one of the 12 Jyotirlinga shrines of Lord Shiva...</p>
+                    <p class="description">Representing the south, this temple is located on Rameswaram island in Tamil Nadu. It is one of the 12 Jyotirlinga shrines of Lord Shiva, making it a holy site for both Shaivites and Vaishnavites (due to its association with Lord Rama). According to the Ramayana, the lingam here was installed by Lord Rama to atone for the sin of killing Ravana. The temple is famous for its massive and ornate corridors, the longest in India.</p>
                 </div>
 
                 <div class="temple-entry">
                     <img src="images/Dwarkadhish.jpg" alt="Dwarkadhish Temple">
                     <h2>3. Dwarkadhish Temple (West)</h2>
                     <div class="location">Dwarka, Gujarat</div>
-                    <p class="description">Representing the west, the Dwarkadhish Temple is dedicated to Lord Krishna (an avatar of Vishnu), who is believed to have established his kingdom here...</p>
+                    <p class="description">Representing the west, the Dwarkadhish Temple is dedicated to Lord Krishna (an avatar of Vishnu), who is believed to have established his kingdom here. Located on the western tip of the Saurashtra peninsula, the temple stands at the confluence of the Gomti River and the Arabian Sea. The main shrine is a majestic five-story structure, supported by 72 pillars, and is a magnificent example of Chalukyan architecture.</p>
                 </div>
 
                 <div class="temple-entry">
                     <img src="images/Jagannath.jpg" alt="Jagannath Temple">
                     <h2>4. Jagannath Temple (East)</h2>
                     <div class="location">Puri, Odisha</div>
-                    <p class="description">Representing the east, the Jagannath Temple in Puri is dedicated to Lord Jagannath (a form of Vishnu/Krishna), along with his siblings...</p>
+                    <p class="description">Representing the east, the Jagannath Temple in Puri is dedicated to Lord Jagannath (a form of Vishnu/Krishna), along with his siblings Balabhadra and Subhadra. This temple is famous for its annual Rath Yatra (chariot festival), where the deities are paraded on massive, elaborately decorated chariots. The temple complex is enormous and is one of the most revered pilgrimage destinations in India, known for its unique wooden deities and massive kitchen.</p>
                 </div>
 
             </div>
@@ -77,7 +77,7 @@
     </footer>
 
      <style>
-        /* Base Reset */
+        /* Base Styling */
         * {
             margin: 0;
             padding: 0;
@@ -263,6 +263,8 @@
             margin-bottom: 2%;
             width: 49%;
             box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
         }
 
         .temple-entry img {
@@ -294,6 +296,7 @@
         .temple-entry p.description {
             color: #444;
             line-height: 1.7;
+            flex-grow: 1;
         }
 
         /* Responsiveness */
