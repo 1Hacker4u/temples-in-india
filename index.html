@@ -50,8 +50,9 @@
 
                 <div class="cards-container clearfix">
                     <div class="card">
-                        <span class="card-tag">12 Jyotirlingas</span>
-                        <img src="images/jyotirlinga.jpg" alt="Jyotirlinga Temple Collage" class="card-img">
+                        <a href="jyotirlingas.html"> <span class="card-tag">12 Jyotirlingas</span>
+                            <img src="images/jyotirlinga.jpg" alt="Jyotirlinga Temple Collage" class="card-img">
+                        </a>
                         <div class="card-content">
                             <h3>The 12 Jyotirlingas</h3>
                             <p>Discover the 12 sacred abodes of Lord Shiva, where he manifested as a 'Jyotirlinga' or column of light, representing his formless, radiant nature.</p>
@@ -60,8 +61,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-tag">Char Dhaam</span>
-                        <img src="images/char-dhaam.jpg" alt="Char Dhaam Temple Collage" class="card-img">
+                         <a href="chardham.html"> <span class="card-tag">Char Dhaam</span>
+                            <img src="images/char-dhaam.jpg" alt="Char Dhaam Temple Collage" class="card-img">
+                         </a>
                         <div class="card-content">
                             <h3>The Char Dhaam</h3>
                             <p>Embark on the ultimate Hindu pilgrimage to the four holy sites at the four corners of India, believed to grant 'moksha' or salvation to devotees.</p>
@@ -70,8 +72,9 @@
                     </div>
 
                     <div class="card">
-                        <span class="card-tag">Shiva Temples</span>
-                        <img src="images/shiva-temples.jpg" alt="Kedarnath Shiva Temple" class="card-img">
+                         <a href="shiva_temples.html"> <span class="card-tag">Shiva Temples</span>
+                            <img src="images/shiva-temples.jpg" alt="Kedarnath Shiva Temple" class="card-img">
+                         </a>
                         <div class="card-content">
                             <h3>Famous Shiva Temples</h3>
                             <p>Explore other iconic and ancient temples dedicated to Lord Shiva, from the world's tallest statue to rock-cut wonders and Himalayan retreats.</p>
@@ -220,13 +223,13 @@
             background-size: cover;
             background-position: center;
             color: #ffffff;
-            display: flex; /* Centering content vertically */
-            align-items: center; /* Centering content vertically */
+            display: flex;
+            align-items: center;
         }
 
         .hero-content {
-            max-width: 800px; /* Increased width */
-            padding-top: 0; /* Removed padding as flex handles alignment */
+            max-width: 800px;
+            padding-top: 0;
         }
 
         .hero h1 {
@@ -238,7 +241,7 @@
 
         .hero p {
             font-size: 1.1rem;
-            max-width: 650px; /* Adjusted max-width */
+            max-width: 650px;
         }
 
         /* About */
@@ -312,11 +315,16 @@
             position: relative;
             min-height: 430px;
         }
-
+        /* Make card image link block */
+        .card a:first-child {
+            display: block; /* Ensures the link covers the image area */
+            text-decoration: none; /* Remove underline from image link */
+        }
         .card-img {
             width: 100%;
             height: 250px;
             object-fit: cover;
+            display: block; /* Remove extra space below image */
         }
 
         .card-tag {
@@ -329,6 +337,7 @@
             font-size: 0.85rem;
             font-weight: 600;
             color: #333;
+            z-index: 1; /* Ensure tag is above image */
         }
 
         .card-content {
@@ -567,7 +576,7 @@
                 font-size: 2.2rem;
             }
             .hero-content {
-                max-width: 90%; /* Adjust hero width */
+                max-width: 90%;
             }
 
             .card {
